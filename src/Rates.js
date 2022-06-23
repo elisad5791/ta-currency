@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Form, Row, Col, Table } from 'react-bootstrap';
 import fx from 'money';
 import _ from 'lodash';
-import './css/Rates.css';
 import getRates from './api/index.js';
 
 const Rates = () => {

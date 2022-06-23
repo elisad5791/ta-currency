@@ -8,7 +8,6 @@ import AppFooter from './AppFooter.js';
 import AppHeader from './AppHeader.js';
 import Converter from './Converter.js';
 import Rates from './Rates.js';
-import './css/App.css';
 
 function App() {
   return (
