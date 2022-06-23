@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, Row } from 'react-bootstrap';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import AppFooter from './AppFooter.js';
+import AppHeader from './AppHeader.js';
+import Converter from './Converter.js';
+import Rates from './Rates.js';
+import './css/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="d-flex flex-column justify-content-between h-100">
+        <AppHeader />
+        <main>
+          <Container>
+            <Row  className="justify-content-center py-4">
+              <Routes>
+                <Route path="/" element={<Converter />} />
+                <Route path="rates" element={<Rates />} />
+              </Routes>
+            </Row>
+          </Container>
+        </main>
+        <AppFooter />
+      </div>
+    </BrowserRouter>
   );
 }
 
