@@ -11,9 +11,9 @@
 
 ### Системные требования
 
-- node.js
+Node.js или Docker
 
-### Установка и запуск
+### Локальная установка и запуск
 
 ```
   git clone git@github.com:elisad5791/ta-currency.git
