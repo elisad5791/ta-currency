@@ -23,3 +23,11 @@
 ```
   
 Откройте в браузере localhost:3000
+
+### Запуск в docker
+
+```
+  docker run -dp 3000:3000 elisad5791/currency
+```
+
+Откройте в браузере localhost:3000
