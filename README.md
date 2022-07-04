@@ -31,3 +31,7 @@ Node.js или Docker
 ```
 
 Откройте в браузере localhost:3000
+
+### Приложение 
+
+[Конвертер](https://ta-currency.vercel.app/)
